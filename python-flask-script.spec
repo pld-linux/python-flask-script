@@ -32,34 +32,44 @@ BuildRequires:	python3-modules
 BuildRequires:	python3-pytest
 %endif
 Requires:	python-modules
+Requires:	python-flask
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The Flask-Script extension provides support for writing external scripts in Flask. 
-This includes running a development server, a customised Python shell, scripts to set up your database, cronjobs, 
-and other command-line tasks that belong outside the web application itself.
+The Flask-Script extension provides support for writing external
+scripts in Flask. This includes running a development server, a
+customised Python shell, scripts to set up your database, cronjobs,
+and other command-line tasks that belong outside the web application
+itself.
 
 %description -l pl.UTF-8
-Rozszerzenie Flask-Script pozwala na pisanie zewnętrznych skryptów w Flasku.
-Co dalej pozawala na uruchamianie serwera rozwojowego, własnych skryptów w Pythonie, skryptów inicjujących bazę dane, skryptów cronta
-i różnych inych zadań z lini poleceń, które nie należą do samej aplikacji.
+Rozszerzenie Flask-Script pozwala na pisanie zewnętrznych skryptów w
+Flasku. Co dalej pozawala na uruchamianie serwera rozwojowego,
+własnych skryptów w Pythonie, skryptów inicjujących bazę dane,
+skryptów cronta i różnych inych zadań z lini poleceń, które nie należą
+do samej aplikacji.
 
 %package -n python3-%{module}
 Summary:	-
 Summary(pl.UTF-8):	-
 Group:		Libraries/Python
 Requires:	python3-modules
+Requires:	python3-flask
 
 %description -n python3-%{module}
-The Flask-Script extension provides support for writing external scripts in Flask. 
-This includes running a development server, a customised Python shell, scripts to set up your database, cronjobs, 
-and other command-line tasks that belong outside the web application itself.
+The Flask-Script extension provides support for writing external
+scripts in Flask. This includes running a development server, a
+customised Python shell, scripts to set up your database, cronjobs,
+and other command-line tasks that belong outside the web application
+itself.
 
 %description -n python3-%{module} -l pl.UTF-8
-Rozszerzenie Flask-Script pozwala na pisanie zewnętrznych skryptów w Flasku.
-Co dalej pozawala na uruchamianie serwera rozwojowego, własnych skryptów w Pythonie, skryptów inicjujących bazę dane, skryptów cronta
-i różnych inych zadań z lini poleceń, które nie należą do samej aplikacji.
+Rozszerzenie Flask-Script pozwala na pisanie zewnętrznych skryptów w
+Flasku. Co dalej pozawala na uruchamianie serwera rozwojowego,
+własnych skryptów w Pythonie, skryptów inicjujących bazę dane,
+skryptów cronta i różnych inych zadań z lini poleceń, które nie należą
+do samej aplikacji.
 
 
 %package apidocs
