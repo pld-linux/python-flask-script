@@ -17,6 +17,7 @@ Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/F/Flask-Script/Flask-Script-%{version}.tar.gz
 # Source0-md5:	e5c73d3b7937f5b88942f342f9617029
 URL:		http://github.com/smurfix/flask-script
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	rpm-pythonprov
 %if %{with python2}
 BuildRequires:	python-distribute
