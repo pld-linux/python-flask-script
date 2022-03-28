@@ -26,7 +26,6 @@ BuildRequires:	python-itsdangerous
 BuildRequires:	python-pytest
 %endif
 %if %{with python3}
-BuildRequires:	python3-distribute
 BuildRequires:	python3-flask
 BuildRequires:	python3-itsdangerous
 BuildRequires:	python3-modules
